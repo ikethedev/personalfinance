@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "../pages/Layout";
 import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
-import Budgets from "../pages/budget";
-import Pots from "../pages/pots";
+import Budgets from "../pages/Budget";
+import Pots from "../pages/Pots";
 import Login from "../pages/Login";
-import RecurringBills from "../pages/recurring";
+import RecurringBills from "../pages/Recurring";
 import Transactions from "../pages/transactions";
 
 import { BudgetConfigProvider } from "../context/BudgetConfigContext";
