@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { useAuth } from "../context/AuthContext"
+import { useAuth } from "../context/authContext.jsx"
 import { BrowserRouter, Routes, Route } from "react-router"; 
 import Layout from "../pages/Layout";
 import Home from "../pages/Home";
