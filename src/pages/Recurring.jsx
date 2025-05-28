@@ -7,7 +7,7 @@ import downarrow from "../assets/images/icons/downarrow.svg";
 import BillSummary from "../components/BillSummary";
 import BillItems from "../components/BillItems";
 import { supabase } from '../backend/supabaseClient';
-import { getStatusIcon, capitalizeFirstLetter, getTotalMonthlyBills } from "../Utils/BillsUtils";
+import { getStatusIcon, capitalizeFirstLetter, getTotalMonthlyBills } from "../utils/BillsUtils";
 import { useTransaction } from '../context/transactionContext'
 import { useAuth } from "../context/authContext"
 import TransactionModal from "../components/TransactionModal"
