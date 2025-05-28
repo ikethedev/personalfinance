@@ -1,0 +1,145 @@
+.auth__page{
+    background-color: var(--beige-100);
+    height: 100%;
+    width: 100%;
+    font-family: "Public Sans", sans-serif;
+}
+
+@media screen and (min-width: 1068px) {
+    .auth__page{
+        display: flex;
+    }
+}
+
+.form__container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile__header{
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.illustration__container{
+    display: none;
+}
+
+@media screen and (min-width: 64rem){
+    .mobile__header{
+        display: none;
+    }
+
+    .illustration__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .auth__illustration{
+        height: 97%;
+        border-radius: 0.75rem;
+    }
+
+    .auth__page{
+        display: flex;
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        gap: 6.25rem;
+    }
+}
+
+.form{
+    padding: 1rem;
+    max-width: 35rem;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0.75rem;
+    background-color: var(--white);
+}
+
+.form__header{
+    letter-spacing: 0.0625rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form__input-container{
+    display: flex;
+    justify-content: space-between;
+    border: 0.0625rem solid var(--grey-900);
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    margin-top: .5rem;
+}
+
+.form__input{
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.submit__btn{
+    background-color: var(--grey-900);
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.form__view-toggle{
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    font-weight: 700;
+    border-bottom: .125rem solid var(--grey-900);
+    color: var(--grey-900);
+    margin-left: .5rem;
+}
+
+.toggle__text{
+    color: var(--grey-500);
+}
+
+.password__requirements{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: .75rem;
+    gap: .5rem;
+    margin-top: .5rem;
+    padding-left: .5rem;
+}
+
+.error__email{
+    color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.3125rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: .75rem;
+}
+
+.error__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}

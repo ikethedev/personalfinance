@@ -1,0 +1,26 @@
+.category{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.category__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1rem; 
+    border-radius: .5rem;
+    background-color: var(--beige-100);
+}
+
+.paid{
+    border-left: .25rem var(--green) solid;
+}
+
+.soon{
+    border-left: .25rem var(--yellow) solid;
+}
+
+.upcoming{
+    border-left: .25rem var(--cyan) solid;
+}

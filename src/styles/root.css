@@ -1,0 +1,39 @@
+:root{
+    --nav-active-background: rgb(248, 244, 240);
+    --green: rgb(39, 124, 120);
+    --grey-900: rgb(32, 31, 36);
+    --grey-500: rgb(105, 104, 104);
+    --grey-300: rgb(179, 179, 179);
+    --grey-100: rgb(242,242,242);
+    --beige-100: rgb(248, 244, 240);
+    --beige-500: rgb(152, 144, 139);
+    --white: rgb(255,255,255);
+    --red: rgb(201, 71, 54);
+    --cyan: rgb(130, 201, 215);
+    --yellow: rgb(242, 205, 172)
+
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    line-height: 150%;
+}
+
+@media screen and (min-width:64rem) {
+    #root{
+        flex-direction: row-reverse;
+    }
+}
+
+body{
+    background-color: var(--beige-100);
+    font-family: "Public Sans";
+}
+
+li{
+    list-style-type: none
+}
+
+

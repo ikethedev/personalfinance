@@ -1,0 +1,55 @@
+.page_btn{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--white);
+    border: 1px solid var(--beige-500);
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 48rem){
+    .page_btn{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.active{
+    background-color: var(--grey-900);
+    color: var(--white);
+}
+
+.pagination_controls{
+    width: auto;
+    display: flex;
+    gap: .25rem;
+    transition: all 1000ms ease-in-out;
+}
+
+@media screen and (min-width: 48rem) {
+    .pagination_controls{
+        width: 100%;
+        justify-content: space-between;
+        gap: .75rem;
+        transition: all 1000ms ease-in-out;
+
+    }
+}
+
+.prev, .next{
+    display: none;
+}
+
+@media screen and (min-width: 48rem){
+    .prev, .next{
+       display: inline;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .button_container{
+        display: flex;
+        gap: .75rem;
+    }
+}

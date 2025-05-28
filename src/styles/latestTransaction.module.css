@@ -1,0 +1,67 @@
+.header{
+    display: flex
+}
+
+.budget_card{
+    display:flex;
+    gap: 1.25rem;
+}
+
+.transaction_container{
+    background-color: var(--beige-100);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 1.25rem;
+}
+
+.transaction_header{
+    display: flex;
+
+}
+
+.latest_spending{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.transaction_link{
+    display:flex;
+    gap: 1rem;
+}
+
+.transaction_link_item{
+    color: var(--grey-500);
+    font-size: 0.75rem; 
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 1rem;
+
+}
+
+.list_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.list_item:not(:last-child){  
+    border-bottom: 0.0625rem solid var(--grey-300);
+}
+
+.list_data{
+    text-align: right;
+}
+

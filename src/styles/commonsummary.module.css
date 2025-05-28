@@ -1,0 +1,17 @@
+.summary{
+    background-color: var(--white);   
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: var(--grey-500);
+}

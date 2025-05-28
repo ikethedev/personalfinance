@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem 4rem;
+    margin-bottom: 2rem;
+    overflow: scroll;
+}
+
+@media screen and (width >= 64rem){
+    .container{
+        width: 100%;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.header_btn{
+    padding: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: var(--grey-900);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.transaction_sender{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.transaction_amount{
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+
+.transaction_date{
+    font-size: 0.75rem;
+    color: var(--grey-500);
+}
+
+@media screen and (width >= 64rem){
+.flex{
+    display:flex;
+}
+
+}
+
+.budget{
+    gap: 1rem;
+    flex: 3;
+}
+
+.budget_container{
+    margin-top: 10%;
+    flex: 3;
+}
+
+@media screen and (width >= 64rem){
+    .budget_container{
+        margin-top: 0%;
+        flex: 3;
+    }
+}
+
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

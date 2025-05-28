@@ -1,0 +1,80 @@
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  font-family: "Public Sans";
+  overflow: scroll;
+}
+
+@media screen and (min-width: 64rem) {
+  .container {
+    width: 100%;
+    overflow: scrolll;
+  }
+}
+.account__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .account__summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 64rem) {
+  .account__summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.account__info {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+
+}
+
+.highlight {
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+
+.account__name {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.account__balance {
+  margin-top: .75rem;
+  font-size: 2rem;
+}
+
+.content__container {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .content__container {
+    grid-template-areas:
+      "overview overview overview overview overview overview"
+      "pots pots pots pots pots budget"
+      "transactions transactions transactions transactions transactions budget"
+      "transactions transactions transactions transactions transactions bills";
+
+    grid-template-rows: auto min-content 0.8fr auto; /* Adjust heights */
+  }
+
+  .area {
+    grid-area: overview;
+  }
+}

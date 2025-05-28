@@ -1,0 +1,217 @@
+.container{
+ 
+
+
+}
+
+@media screen and (min-width: 48rem) {
+  .container{
+    display: flex;
+    gap: 2rem;
+  
+  }
+  
+  .summary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, .25fr);
+
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .summary{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    margin-bottom: 11rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .header{
+    grid-column: 1/ 3;
+  }
+}
+
+.chart{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.budget__limit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.total__spent{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.limit{
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--grey-500);
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 0.5rem;
+}
+
+.chart__wrapper {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 48rem) {
+    .chart__wrapper{
+      grid-column: 1 / 3;
+      margin: auto;
+      flex-direction: row;
+      gap: 1rem;
+      max-width: 50%; /* Adjust as needed */
+
+    }
+  }
+
+  @media screen and (min-width: 64rem) {
+    .chart__wrapper{
+      grid-column: 1 / 1;
+      margin: auto;
+      flex-direction: column;
+    }
+  }
+  
+  
+  .chart__wrapper > div {
+    position: relative;
+    width: 350px;
+  }
+
+  .budgets{
+    display: grid;
+    justify-content: center;
+    
+  }
+
+  @media screen and ( 48rem > width > 31rem) {
+    .budgets{
+      margin: auto;
+      width: 70%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (width > 48rem) {
+    .budgets{
+      display: grid;
+      grid-template-rows: repeat(2, .25fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (width > 64rem) {
+    .budgets{
+      display: grid;
+      grid-template-rows: repeat(2, .25fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .budget__item{
+    display: flex;
+    gap: 16px;
+    padding: 1rem;
+  }
+
+
+  .category{
+    color: var(--grey-500);
+    font-size: 0.75rem;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+
+  .maximum{
+    font-weight: 700;
+    font-weight: 0.825rem;
+    font-style: normal;
+    line-height: 150%;
+  }
+
+  @media screen and (min-width: 64rem) {
+    .area{
+      grid-area: budget;
+      min-height: 25rem;
+      width: 100%;
+      flex: 2;
+      
+    }
+  }
+
+/* Remove to chart module file */
+
+.spending_summary{
+  width: 100%;
+}
+
+.summary_chart{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sidebar{
+  height:100px;
+}
+
+.summary_chart_items{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.summary_chart:not(:last-child){
+  border-bottom: solid 1px var(--grey-500);
+}
+
+.spent_amount{
+  font-weight:700;
+}
+
+.item_category{
+  color: var(--grey-500);
+}
+
+.budget_info_container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  grid-column: 1 / -1;
+}
+
+@media screen and (width > 48rem){
+  .budget_info_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+}
+
+@media screen and (width > 64rem){
+  .budget_info_container{
+    display: flex;
+    flex-direction: column;
+  }
+}

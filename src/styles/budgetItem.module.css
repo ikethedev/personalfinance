@@ -1,0 +1,204 @@
+/* Container styles */
+.container{
+    padding: 1.5rem 1rem;
+}
+
+/* Header styles */
+.header{
+    display: flex;
+}
+
+/* Card styles */
+.budget_card{
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* Transaction container */
+.transaction_container{
+    width: 100%;
+    background-color: var(--beige-100);
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+}
+
+/* Transaction header row */
+.transaction{
+    display: flex;
+    width:100;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-bottom: 1.25rem;
+    background-color: var(--beige-100);
+    padding: 1rem;
+    border-radius: 0.5rem; 
+}
+
+.transaction_header{
+    display: flex;
+    width:100;
+    justify-content:space-between;
+
+}
+
+.latest_spending{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Transaction link */
+.transaction_link{
+    display: flex;
+    gap: 1rem;
+}
+
+.transaction_link_item{
+    color: var(--grey-500);
+    font-size: 0.75rem; 
+}
+
+/* List styles */
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 1rem;
+}
+
+.list_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+}
+
+.list_item:not(:last-child){  
+    border-bottom: 0.0625rem solid var(--grey-300);
+}
+
+.list_data{
+    text-align: right;
+}
+
+/* Text styles */
+.paragraph{
+    color: var(--grey-500);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+
+/* Total styles */
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Menu styles */
+.menu{
+    position: relative;
+}
+
+.menu_options{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    z-index: 10000;
+    width: 100px;
+    font-size: 0.875rem;
+}
+
+/* Progress bar styles */
+.progress_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total_saved{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 120%;
+    color: var(--grey-900);
+}
+
+.progress_bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--beige-100);
+    position: relative;
+    border-radius: 0.25rem;
+    --progress-width: 8%;
+}
+
+.progress_bar::after{
+    content: "";
+    background-color: var(--background-color);
+    width: var(--progress-width);
+    height: 100%;
+    position: absolute;
+    border-radius: 0.25rem;
+    transition: width .5s ease-in-out;
+}
+
+.withdraw_mode::before {
+    content: "";
+    background-color: var(--red);
+    width: calc(var(--current-progress) - var(--preview-progress));
+    height: 100%;
+    position: absolute;
+    right: calc(100% - var(--current-progress));
+    border-radius: 0.25rem;
+    z-index: 1;
+    transition: width .5s ease-in-out;
+}
+
+.progress_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.progress_percentage{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.percentage_amount{
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--grey-500);
+}
+
+/* Button styles */
+.btn_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    background-color: var(--beige-100);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.delete_btn{
+    text-align: left;
+    color: var(--red);
+}

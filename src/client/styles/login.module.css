@@ -1,0 +1,9 @@
+form{
+    background-color: var(--white);
+}
+
+.login__page{
+    height: 100vh;
+    background-color: var(--beige-100);
+}
+
