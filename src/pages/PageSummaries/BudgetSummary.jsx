@@ -6,7 +6,7 @@ import BudgetChart from "../../components/BudgetChart";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import { useBudgetConfig } from "../../context/BudgetConfigContext";
-import { useBudget } from "../../context/BudgetContext";
+import { useBudget } from "../../context/budgetContext";
 
 
 const BudgetSummary = ({showViewAll, showDetails}) => {
