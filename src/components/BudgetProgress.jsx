@@ -1,5 +1,5 @@
 import budgetProgressStyles from "../styles/budgetprogress.module.css"
-import { useBudget } from "../context/BudgetContext";
+import { useBudget } from "../context/budgetContext";
 
 export default function BudgetProgress({ max, theme, categor, spent}){
     const { categoryTotals, groupedTransactions, group } = useBudget()

@@ -7,7 +7,7 @@ import rightArrow from "../assets/images/icon-caret-right.svg";
 import BudgetProgress from "./BudgetProgress";
 import { formatDate } from "../utils/General";
 import ellipsis from "../assets/images/icon-ellipsis.svg";
-import { useBudget } from "../context/BudgetContext";
+import { useBudget } from "../context/budgetContext";
 import useModalManagement from "./useModalManagement/"
 import PostActionsModal from "./PostActionsModal"
 import pageStyles from "../styles/potsItem.module.css";

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/pagination.module.css"
+
 const Pagination = ({ data, renderItem }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const TOTAL_TRANSACTION_PER_PAGE = 10;
