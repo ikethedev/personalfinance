@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { useBudget } from "../context/BudgetContext";
+import { useBudget } from "../context/budgetContext";
 import { useAuth } from "../context/authContext"
 
 import budgetProgressStyles from "../styles/budgetprogress.module.css"
