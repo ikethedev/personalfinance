@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
 import pageStyles from "../styles/recurring.module.css";
-import { getStatusIcon, capitalizeFirstLetter } from "../Utils/BillsUtils";
+import { getStatusIcon, capitalizeFirstLetter } from "../utils/BillsUtils";
 import BillsSearchBar from "./BillsSearchBar";
 import { AuthContext } from "../context/authContext";
 import { useBills } from "../context/billsContext"
